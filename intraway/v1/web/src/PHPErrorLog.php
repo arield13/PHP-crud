@@ -47,7 +47,7 @@ class PHPErrorLog
 		$ip= $_SERVER['REMOTE_ADDR'];
 		$errorString="Error ".$this->types[$type]." :: ".$message." occured on time $dateTime by ip $ip".PHP_EOL;
 	
-		error_log($errorString, 3, getcwd()."/log/log_test.log");
+		error_log($errorString, 3, getcwd()."/log_test.log");
 	
 		return FALSE;
 	}
